@@ -1,0 +1,119 @@
+/* General container to center the registration form */
+.registration-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6e7f89, #4caf50);
+  }
+  
+  /* Styling the registration form box */
+  .registration-form {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 450px;
+    box-sizing: border-box;
+    position: relative;
+    animation: fadeIn 0.5s ease-out;
+  }
+  
+  /* Title Styling */
+  .registration-form h2 {
+    margin-bottom: 25px;
+    font-size: 28px;
+    color: #333;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+  
+  /* Error and Success message styling */
+  .error {
+    color: #d9534f;
+    margin-bottom: 15px;
+    font-size: 14px;
+    text-align: left;
+  }
+  
+  .success {
+    color: #5bc0de;
+    margin-bottom: 15px;
+    font-size: 14px;
+    text-align: left;
+  }
+  
+  /* Input group for icons */
+  .input-group {
+    margin: 10px 0;
+    position: relative;
+  }
+  
+  /* Input fields styling */
+  .registration-form input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+  }
+  
+  /* Input focus effect */
+  .registration-form input:focus {
+    border-color: #4caf50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.6);
+  }
+  
+  /* Button Styling */
+  .register-btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #4caf50, #45a049);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+  }
+  
+  /* Button Hover Effect */
+  .register-btn:hover {
+    background: linear-gradient(135deg, #45a049, #4caf50);
+  }
+  
+  /* Subtle Input Hover Effect */
+  .registration-form input:hover {
+    border-color: #45a049;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    .registration-form {
+      width: 90%;
+      padding: 20px;
+    }
+    .registration-form h2 {
+      font-size: 22px;
+    }
+  }
+  
+  /* Keyframes for fade-in effect */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
